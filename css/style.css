@@ -577,8 +577,7 @@ header .header-bg nav ul li a:hover{
     extra menu section css ends
 ===================================== */
 #gallery{
-    height:1300px;
-    margin-bottom:100px;   
+    margin-bottom:85px;   
 }
 #gallery .gallery-bg{
     height:85px;
