@@ -323,7 +323,7 @@ header .header-bg nav ul li a:hover{
     top:0;
     left:0;
 }
-.land-bg .land-image img.food{
+.land-bg .land-image a img.food{
     width:100%;
     position:absolute;
     left:-87px;
@@ -332,7 +332,7 @@ header .header-bg nav ul li a:hover{
     cursor: pointer;
     box-shadow: none;
 }
-.land-bg .land-image img.food:hover{
+.land-bg .land-image a img.food:hover{
     animation:rotate linear infinite 1.5s;
     -webkit-animation:rotate linear forwards 1.5s;
 }
@@ -575,6 +575,106 @@ header .header-bg nav ul li a:hover{
 }
 /* =================================
     extra menu section css ends
+===================================== */
+#gallery{
+    height:1300px;
+    margin-bottom:100px;   
+}
+#gallery .gallery-bg{
+    height:85px;
+    text-align:center;
+    margin-bottom:150px;
+}
+#gallery .gallery-bg h5{
+    text-transform: uppercase;
+}
+#gallery .gallery-bg h2{
+    text-transform: uppercase;
+    padding-bottom:30px;
+}
+#gallery .gallery-bg p{
+    line-height:20px;
+    padding:0 178px;
+}
+#gallery .gallery-nav{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+#gallery .gallery-nav ul{
+    display:flex;
+    justify-content: center;
+}
+#gallery .gallery-nav ul li{
+    padding:0 16px;
+    line-height:28px;
+    text-transform: capitalize;
+    margin:0 24px;
+    cursor: pointer;
+    
+}
+#gallery .gallery-nav ul li.active{
+    background:var(--main-color);
+    color:#ffffff;
+    border-radius:10px;
+}
+
+
+#gallery .gallery-content{
+    display:flex;
+    flex-wrap:wrap;
+}
+#gallery .gallery-item{
+    position:relative;
+    width:25%;
+}
+#gallery .gallery-item img{
+    width:100%;
+} 
+#gallery .gallery-item .gallery-overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    background:rgba(255, 193, 85,0.9);
+    color:#ffffff;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    transition:all linear 0.4s;
+    opacity:0;
+}
+#gallery .gallery-item .gallery-overlay a i{
+    width:38px;
+    height:38px;
+    line-height:38px;
+    text-align: center;
+    border:1px solid #ffffff;
+    border-radius:50%;
+    color:#ffffff;
+    margin-bottom:24px;
+}
+#gallery .gallery-item:hover .gallery-overlay{
+    opacity:1;
+}
+
+.vbox-prev{
+    left:173px;
+}
+.vbox-next{
+    right:173px;
+}
+
+.vbox-close{
+    top:55px;
+    right:22px;
+}
+
+
+
+/* =================================
+    special dish section css ends
 ===================================== */
 #reservation{
     height:425px;

@@ -19,4 +19,20 @@ $(document).ready(function(){
    //back to top function;
    $('.to-top').toTop();
   
+   //gallery nav li click;
+  
+   $('#gallery .gallery-nav ul li').on('click', function(){
+      $(this).addClass('active').siblings().removeClass('active'); 
+   });
+   
+   var mixer = mixitup('.gallery-content');
+   
+    //gallery pop-up using venoBox;
+    
+    new VenoBox({
+       selector:'.image-link',
+       spinner:'grid',
+       spinColor:'#ffe001',
+    });
+  
 });
