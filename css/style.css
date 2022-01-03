@@ -252,11 +252,17 @@ header .header-bg nav ul li a:hover{
 .land-bg .land-text h2{
     font-family: gabelisa;
     text-transform: capitalize;
+    position:absolute;
+    top:0;
+    left:158px;
     padding-top:40px;
+    margin-bottom:100px;
+    
 }
 .land-bg .land-text h1{
     text-transform: uppercase;
     padding-bottom:7px;
+    padding-top:100px;
 }
 .land-bg .land-text h3{
     text-transform: uppercase;
@@ -744,6 +750,79 @@ header .header-bg nav ul li a:hover{
 /* =================================
     reservation section css ends
 ===================================== */
+#special{
+    height:858px;
+    background:#e9e7ab;
+    margin-bottom:124px;
+}
+
+#special .special-bg{
+    height:858px;
+    text-align:center;
+}
+#special .special-bg .upcoming-heading{
+    height:85px;
+    text-align:center;
+    padding-top:50px;
+}
+#special .special-bg .upcoming-heading h5{
+    text-transform: uppercase;
+    padding-bottom:17px;
+    
+}
+#special .special-bg .upcoming-heading h2{
+    text-transform: uppercase;
+}
+#special .special-bg .main{
+    height:673px;
+    display:flex;
+    margin-top:100px;
+}
+#special .special-bg .main .special-menu{
+    width:50%;
+    height:673px;
+    background:url(../images/sushi.jpg) no-repeat center/ cover;
+    position:relative;
+    z-index:1;
+    
+}
+#special .special-bg .main .special-menu::after{
+    content:'';
+    width: 100%;
+    height:100%;
+    position: absolute;
+    inset: 0;
+    background:rgba(0,0,0,0.6);
+    z-index:-1;
+}
+#special .special-bg .main .special-text{
+    width:50%;
+    height:673px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}
+#special .special-bg .main .special-text h3{
+    text-transform: uppercase;
+    /* padding-bottom:0; */
+}
+#special .special-bg .main .special-text .clock{
+    margin-top:-321px;
+    margin-left:45px;
+}
+
+.flip-clock-wrapper ul li a div div.inn{
+    background-color:#a8a89c;
+}
+.flip-clock-dot{
+    background:#ffffff;
+}
+
+
+/* =================================
+    particles & counter section css ends
+===================================== */
 footer{
     height:582px;
     background:url(../images/footer-image.jpg);
@@ -751,6 +830,7 @@ footer{
     background-position:center;
     background-size:cover;
 }
+
 footer .footer-bg{
     height:582px;
     display:flex;
@@ -760,6 +840,7 @@ footer .footer-bg .footer-details{
     width:514px;
     height:582px;
 }
+
 footer .footer-bg .footer-details img{
     margin-top:65px;
     padding-bottom:70px;
